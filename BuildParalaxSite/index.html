@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Paralax</title>
+
+    <style>
+        .section {
+            min-height: 1000px;
+            overflow: hidden;
+            position: relative;
+            padding: 80px 10px 0px;
+            background-size: cover;
+        }
+
+        .section:nth-child(even) {
+            background-color: rgb(162, 223, 247);
+        }
+
+        #HOME {
+            background: url(./images/bg-home.jpeg) no-repeat center center fixed;
+        }
+        #ABOUT {
+            background: url(./images/bg-about.jpeg) no-repeat center center fixed;
+        }
+
+        #ABOUT > div {
+            background-color:rgba(20, 197, 241, 0.5);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-info navbar-expand-sm sticky-top">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse">
+                <span class="navbar-toggler-icon" />
+            </button>
+            <div class="collapse navbar-collapse" id="navbarcollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a href="#HOME" class="nav-link">HOME</a></li>
+                    <li class="nav-item"><a href="#ABOUT" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item"><a href="#PRODUCTS" class="nav-link">PRODUCTS</a></li>
+                    <li class="nav-item"><a href="#CONTACT" class="nav-link">CONTACT</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="section" id="HOME">
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Bootstrap Products</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                    imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                    Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+                    porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+                    feugiat a,</p>
+                <p><a href="#about" class="btn btn-outline-info">Learn More</a></p>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" id="ABOUT">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="h2">Welcome to our site</div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean
+                        massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                        Donec
+                        quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                        Donec pede justo.</p>
+                </div>
+                <div class="col pt-1">
+                    <img src="https://via.placeholder.com/400x300" alt="" class="img-fluid p-1 rounded float-left">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean
+                            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Donec
+                            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                            Donec pede justo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="PRODUCTS">
+            <div class="container">
+                <div class="row">
+                    <div class="col pt-1">
+                        <div class="h2">Welcome to our site</div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean
+                            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                            Donec
+                            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                            Donec pede justo.</p>
+                    </div>
+                    <div class="col pt-1">
+                        <img src="https://via.placeholder.com/400x300" alt="" class="img-fluid rounded img-thumbnail float-left m-1">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                Aenean
+                                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Donec
+                                quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                                Donec pede justo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
